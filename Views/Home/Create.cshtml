@@ -1,0 +1,65 @@
+﻿@model Student
+
+<body >
+    <h1 class="text-primary">Add Student Data</h1>
+
+    <form class="bg-secondary" method="post" style="border: 2px solid #000;
+        border-radius: 7px;
+        padding: 20px;
+        ">
+        <fieldset>
+            <div>
+                <label asp-for="Name" class="form-label mt-0 text-dark"></label>
+                <input asp-for="Name" class="form-control shadow border-black">
+                <span asp-validation-for="Name" class="text-warning"></span>
+
+            </div>
+
+            <div>
+                <label asp-for="FatherName" class="form-label text-dark mt-2"></label>
+                <input asp-for="FatherName" class="form-control shadow border-black" autocomplete="on">
+                <span asp-validation-for="FatherName" class="text-warning"></span>
+            </div>
+
+            <div>
+                <label asp-for="MotherName" class="form-label text-dark mt-2"></label>
+                <input asp-for="MotherName" class="form-control shadow border-black" autocomplete="on">
+                <span asp-validation-for="MotherName" class="text-warning"></span>
+            </div>
+            <div>
+                <label asp-for="Age" class="form-label text-dark mt-2"></label>
+                <input asp-for="Age" type="number" class="form-control shadow border-black" autocomplete="on">
+                <span asp-validation-for="Age" class="text-warning"></span>
+            </div>
+
+            <div>
+                <label asp-for="Address" class="form-label text-dark mt-2"></label>
+                <input asp-for="Address" class="form-control shadow border-black"  autocomplete="on">
+                <span asp-validation-for="Address" class="text-warning"></span>
+            </div>
+
+            <div>
+                <label asp-for="RegistrationDate" class="form-label text-dark mt-2"></label>
+                <input asp-for="RegistrationDate" class="form-control shadow border-black" autocomplete="on">
+                <span asp-validation-for="RegistrationDate" class="text-warning"></span>
+            </div>
+        </fieldset>
+
+
+        <div class="row">
+            <div class="col-6">
+                <button type="submit" class="btn btn-primary shadow border-black mt-3  form-control">Add</button>
+            </div>
+            <div class="col-6">
+                <a asp-controller="Home" asp-action="Index" class="btn btn-dark mt-3 shadow border-black form-control">Go back to list</a>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+@section scripts {
+    @{
+        <partial name="_ValidationScriptsPartial"></partial>
+    }
+}

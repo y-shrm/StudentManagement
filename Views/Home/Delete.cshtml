@@ -1,0 +1,60 @@
+﻿@model Student
+
+<body >
+    <h1 class="text-primary">Delete Student Data</h1>
+
+    <form class="bg-secondary" method="post" style="border: 2px solid #000;
+        border-radius: 7px;
+        padding: 20px;
+        ">
+        <fieldset>
+            <div>
+                <label asp-for="Name" class="form-label text-dark mt-0"></label>
+                <input disabled asp-for="Name" class="form-control shadow border-black">
+                
+
+            </div>
+
+            <div>
+                <label asp-for="FatherName" class="form-label text-dark mt-2"></label>
+                <input disabled asp-for="FatherName" class="form-control shadow border-black" autocomplete="on">
+                
+            </div>
+
+            <div>
+                <label asp-for="MotherName" class="form-label text-dark mt-2"></label>
+                <input disabled asp-for="MotherName" class="form-control shadow border-black" autocomplete="on">
+                
+            </div>
+            <div>
+                <label asp-for="Age" class="form-label text-dark mt-2"></label>
+                <input disabled asp-for="Age" class="form-control shadow border-black" autocomplete="on">
+                
+            </div>
+
+            <div>
+                <label asp-for="Address" class="form-label text-dark mt-2"></label>
+                <input disabled asp-for="Address" class="form-control shadow border-black"  autocomplete="on">
+                
+            </div>
+
+            <div>
+                <label asp-for="RegistrationDate" class="form-label text-dark mt-2"></label>
+                <input disabled asp-for="RegistrationDate" class="form-control shadow border-black" >
+                
+            </div>
+        </fieldset>
+
+
+        <div class="row">
+            <div class="col-6">
+                <button type="submit" class="btn btn-primary shadow border-black mt-3  form-control">Delete</button>
+            </div>
+            <div class="col-6">
+                <a asp-controller="Home" asp-action="Index" class="btn btn-dark mt-3 shadow border-black form-control">Go back to list</a>
+            </div>
+        </div>
+
+    </form>
+</body>
+

@@ -1,0 +1,52 @@
+﻿@model List<Student>
+
+<div class="container">
+    <div class="row pt-4 pb-2">
+        <div class="col-6">
+            <h2 class="text-primary">
+                Student List
+            </h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Home" asp-action="Create" class="btn btn-primary shadow border-black">Add new student</a>
+
+        </div>
+    </div>
+
+<table class="table table-secondary table-striped table-bordered ">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Father's Name</th>
+            <th>Mother's Name</th>
+            <th>Age</th>
+            <th>Street Address</th>
+            <th>Registration Date</th>
+            <th>Update</th>
+            <th>Delete</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+                <th>@obj.Name</th>
+                <th>@obj.FatherName</th>
+                <th>@obj.MotherName</th>
+                <th>@obj.Age</th>
+                <th>@obj.Address</th>
+                <th>@obj.RegistrationDate</th>
+                <th>
+                    <a class="text-dark" asp-controller="Home" asp-action="Update" asp-route-id="@obj.Id">update</a>
+                 </th>
+                <th>
+                    <a asp-controller="Home" asp-action="Delete" asp-route-id="@obj.Id" class="text-warning">delete</a>
+                    
+                </th>
+                
+            </tr>
+        }
+    </tbody>
+
+</table>
