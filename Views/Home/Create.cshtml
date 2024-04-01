@@ -1,5 +1,6 @@
 ﻿@model Student
-
+@* @Html.Partial("_testPartial") *@
+<partial name ="_testPartial"></partial>
 <body >
     <h1 class="text-primary">Add Student Data</h1>
 
@@ -28,7 +29,7 @@
             </div>
             <div>
                 <label asp-for="Age" class="form-label text-dark mt-2"></label>
-                <input asp-for="Age" type="number" class="form-control shadow border-black" autocomplete="on">
+                <input asp-for="Age"  class="form-control shadow border-black" autocomplete="on">
                 <span asp-validation-for="Age" class="text-warning"></span>
             </div>
 
@@ -57,6 +58,8 @@
 
     </form>
 </body>
+
+
 
 @section scripts {
     @{

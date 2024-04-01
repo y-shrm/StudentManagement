@@ -147,3 +147,4 @@ C:\Projects\studentManagementSystem\obj\Debug\net8.0\refint\studentManagementSys
 C:\Projects\studentManagementSystem\obj\Debug\net8.0\studentManagementSystem.pdb
 C:\Projects\studentManagementSystem\obj\Debug\net8.0\studentManagementSystem.genruntimeconfig.cache
 C:\Projects\studentManagementSystem\obj\Debug\net8.0\ref\studentManagementSystem.dll
+C:\Projects\studentManagementSystem\obj\Debug\net8.0\studentManagementSystem.sourcelink.json

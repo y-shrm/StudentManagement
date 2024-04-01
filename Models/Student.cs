@@ -21,7 +21,7 @@ namespace studentManagementSystem.Models
         public string MotherName { get; set;}
 
         [Required]
-        [MaxLength(100)]
+        //[MaxLength(100)]
         public int Age { get; set; }
         [Required]
         public string Address { get; set;}
